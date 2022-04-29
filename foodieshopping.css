@@ -1,0 +1,194 @@
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 16px;
+}
+a, a:link{
+  text-decoration: none;
+  outline: none;
+  color:#292727;
+}
+a:visited{
+  color:#292727;
+}
+
+a:hover{
+  text-decoration: none;
+   color: #F4AC33;
+}
+a:active{
+  color:#292727;
+}
+
+h5{
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-md-6.h2{
+  flex-wrap: wrap;
+}
+
+header {
+  background-color: #0b0701eb;
+  position: sticky;
+  top: 0;
+  padding: 20px 0px;
+  z-index: 9;
+  opacity: 4;
+}
+
+.nav {
+  height: 50px;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+.nav-brand span {
+  font-size:24px;
+  font-weight: bold;
+  color:#F4AC33;
+  
+}
+.menu a{
+  color:#e8ede9;
+}
+.menu {
+  column-gap: 45px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .menu {
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.menu-item{
+  font-size:19px;
+  color:#F4AC33;
+  text-align: center;
+  padding:0 12px;
+}
+
+.nav-btn {
+  column-gap: 20px;
+  justify-content: right;
+}
+.btn-cart i{
+  color:#F4AC33;
+  font-size: 24px;
+}
+.btn-login i{
+  color:#F4AC33;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+    position: absolute;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  transform: translateX(-100%);
+  background-color: rgb(159, 159, 145);
+  transition: 0.5s;
+}
+
+.mobile-menu.show {
+    transform: translateX(0);
+  }
+
+  .menu-item {
+    text-align: center;
+  }
+
+
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+    position: absolute;
+  }
+}
+
+
+
+
+.card{
+  margin: 10px;
+}
+.card-body{
+  background-color:#F4AC33;
+}
+
+.heading-container{
+  justify-content:center;
+  padding: 25px;
+  border-top: 2px solid rgb(215, 210, 210);
+}
+.allFood a{
+  display: inline-block;
+  padding: 7px 30px;
+  background-color:#231909;
+  color: #f6f0f0;
+  border-radius: 5px;
+  border: 2px solid #121212;
+
+}
+
+
+
+h5 {
+  font-weight: bold;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
+
+
+@media (min-width: 768px){
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
+
+
+.info{
+  background-color: #0b0701eb;
+}
+
+
+/* 購物車 */
+
+h1{text-align:center;}
+.badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 10px;
+  }
+  .my-cart-icon-affix {
+    position: fixed;
+    z-index: 999;
+  }
